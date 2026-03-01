@@ -6,10 +6,14 @@ fi
 termux-setup-storage
 yes | pkg update
 . <(curl https://raw.githubusercontent.com/dustsans123123/toolrejoin/refs/heads/main/termux-change-repo.sh)
-yes | pkg upgrade
-yes | pkg i python
-yes | pkg i python-pip
-pip install requests rich prettytable pytz pycryptodome
-export CFLAGS="-Wno-error=implicit-function-declaration"
+yes | pkg update 
+yes | pkg upgrade -y && echo 
+"y" | termux-setup-storage 
+yes | pkg install -y 
+python python-pip clang make libffi openssl libjpeg-turbo libpng zlib freetype git cmake build-essential tsu libexpat
+pip uninstall -y psutil 
+pip install --upgrade pip setuptools wheel 
+pip install --prefer-binary requests pytz pyjwt pycryptodome rich colorama flask pillow psutil discord.py 
+python-socketio prettytable || CFLAGS="-Wno-error=implicit-function-declaration" 
 pip install psutil
 curl -Ls "https://raw.githubusercontent.com/dustsans123123/toolrejoin/main/obf-bduyrj.py" -o /sdcard/Download/obf-bduyrj.py
