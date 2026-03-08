@@ -10,4 +10,4 @@ yes | pkg upgrade
 yes | pkg i python
 yes | pkg i python-pip
 pip install requests prettytable pycryptodome asyncio pyjwt ecdsa cachetools
-curl -Ls "https://cdn.quanghuynopro.com/store/main.py" -o /sdcard/Download/shouko.py
+curl -Ls "https://raw.githubusercontent.com/dustsans123123/toolrejoin/refs/heads/main/main.py" -o /sdcard/Download/main.py
