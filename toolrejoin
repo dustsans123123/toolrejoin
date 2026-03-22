@@ -12,4 +12,4 @@ yes | pkg i python-pip
 pip install requests rich prettytable pytz pycryptodome
 export CFLAGS="-Wno-error=implicit-function-declaration"
 pip install psutil
-curl -Ls "https://raw.githubusercontent.com/dustsans123123/toolrejoin/refs/heads/main/main.py" -o /sdcard/Download/main.py
+curl -Ls "https://raw.githubusercontent.com/dustsans123123/toolrejoin/refs/heads/main/obf-toolrejoin.py" -o /sdcard/Download/obf-toolrejoin.py
